@@ -24,11 +24,17 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
 
-$usuario = new Usuario();
+//alterar um usuario
+//$usuario = new Usuario();
+//$usuario->loadById(9);
+//$usuario->update("chave", "portão");
+//echo $usuario;
+
+$usuario =  new Usuario();
 
 $usuario->loadById(9);
 
-$usuario->update("chave", "portão");
+$usuario->delete();
 
 echo $usuario;
 
