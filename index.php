@@ -15,12 +15,21 @@ require_once("config.php");
 //echo json_encode($lista);
 
 //carrega um usuario usando o login e senha
+//$usuario = new Usuario();
+//$usuario->login("thamiris","negona");
+//echo $usuario;
+
+//criando um novo usuario
+//$aluno = new Usuario("Porta", "trancada");
+//$aluno->insert();
+//echo $aluno;
 
 $usuario = new Usuario();
 
-$usuario->login("thamiris","negona");
+$usuario->loadById(9);
+
+$usuario->update("chave", "portão");
 
 echo $usuario;
-
 
 ?>
